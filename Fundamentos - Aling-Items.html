@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Items</title>
+
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        
+        .item {
+            background-color: orange;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .center {
+            align-items: center;
+        }
+        
+        .strectch {
+            align-items: stretch;
+        }
+        
+        .start {
+            align-items: flex-start;
+        }
+        
+        .end {
+            align-items: flex-end;
+        }
+        
+        .baseline {
+            align-items: baseline;
+        }
+        
+        .colunn {
+            flex-direction: column;
+        }
+        
+        .central {
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cetral.item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>row</h1>
+    <p>Center</p>
+    <section class="container center">
+        <div class="item ">item 1</div>
+        <div class="item ">texto para textes</div>
+        <div class="item ">item 3</div>
+    </section>
+
+    <p>Strectch</p>
+
+    <section class="container strectch">
+        <div class="item ">item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <p>Flex-Start</p>
+    <section class="container start">
+        <div class="item ">item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item ">item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item "><br>item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <h1>colunn</h1>
+
+    <p>Flex-Start</p>
+    <section class="container start colunn">
+        <div class="item ">item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end colunn">
+        <div class="item ">item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center colunn">
+        <div class="item ">item 1</div>
+        <div class="item ">texto para textes</div>
+        <div class="item ">item 3</div>
+    </section>
+
+
+    <p>baseline</p>
+    <section class="container baseline colunn">
+        <div class="item "><br>item 1</div>
+        <div class="item ">texto como exemplos.</div>
+        <div class="item ">item 3 exemplos de textos para entendimento.</div>
+    </section>
+
+    <P>alinhamento central à tela</P>
+    <section class="container central center">
+        <div class="item">Posicionando elementos com Flexbox em CSS Estrutura básica e prática com align items</div>
+    </section>
+</body>
+
+</html>
